@@ -159,7 +159,6 @@ namespace EDCViewer.Client
             }
             catch (Exception e)
             {
-                
                 UnityEngine.Debug.Log($"{e.StackTrace}\nFailed to parse message: {e.Message}: {System.Text.Encoding.UTF8.GetString(_receiveBuffer[..Math.Min(1024, count)])}...");
             }
         }

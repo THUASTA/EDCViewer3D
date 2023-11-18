@@ -25,11 +25,11 @@ public class InventoryManager : MonoBehaviour
     }
     public void CreatNewObject(ObjectDisplay objectDiaplay)
     {
-            Slot newObject = Instantiate(slotPrefab, slotGrid.transform.position, Quaternion.identity);
-            newObject.gameObject.transform.SetParent(slotGrid.transform);
-            newObject.slotObject = objectDiaplay;
-            newObject.slotImage.sprite = objectDiaplay.objectImage;
-            newObject.slotNum.text = objectDiaplay.objectHeld.ToString();
+        Slot newObject = Instantiate(slotPrefab, slotGrid.transform.position, Quaternion.identity);
+        newObject.gameObject.transform.SetParent(slotGrid.transform);
+        newObject.slotObject = objectDiaplay;
+        newObject.slotImage.sprite = objectDiaplay.objectImage;
+        newObject.slotNum.text = objectDiaplay.objectHeld.ToString();
     }
 
     /// <summary>

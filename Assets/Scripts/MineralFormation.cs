@@ -11,6 +11,13 @@ public class MineralFormation : MonoBehaviour
     public GameObject GoldOre;
     public GameObject DiamondOre;
 
+    private void Start()
+    {
+        DiamondOre = Resources.Load<GameObject>("Prefabs/Diamond/diamond");
+        GoldOre = Resources.Load<GameObject>("Prefabs/Gold/gold_ingot");
+        IronOre = Resources.Load<GameObject>("Prefabs/Iron/iron_ingot");
+    }
+
     public void OreFormation(CompetitionUpdate.Mine.OreType oreType, string mineId, Vector3 orePosition)
     {
         if (oreType == CompetitionUpdate.Mine.OreType.IronOre)
