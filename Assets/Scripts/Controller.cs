@@ -168,7 +168,7 @@ public class Controller : MonoBehaviour
                 //mines formation
                 for (int i = 0; i < competitionUpdate.mines.Count; i++)
                 {
-                    mineralFormation.OreFormation(competitionUpdate.mines[i].oreType, competitionUpdate.mines[i].mineId, new Vector3(competitionUpdate.mines[i].position.x, competitionUpdate.mines[i].position.y, 0));
+                    mineralFormation.OreFormation(competitionUpdate.mines[i].oreType, competitionUpdate.mines[i].mineId, new Vector3(competitionUpdate.mines[i].position.x, 0, competitionUpdate.mines[i].position.y));
                 }
 
                 //player
